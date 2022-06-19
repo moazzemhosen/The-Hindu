@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 import TrandingNav from '../components/TrandingNav'
 import Home from '../pages/Home'
@@ -41,7 +41,7 @@ const Routing = () => {
         <Route path="/crossword" element={<CrossWord />} />
         <Route path="/science" element={<Science />} />
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
