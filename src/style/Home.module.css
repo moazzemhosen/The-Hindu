@@ -1,0 +1,38 @@
+.griddiv{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,80px);
+    
+    grid-gap: 5%;
+    margin-bottom: 40px;
+}
+.eachdiv{
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    
+}
+.description{
+width: 70%;
+background-color: white;
+}
+.description>p{
+font-size: 12px;
+background-color: white;
+}
+.description>h5{
+    font-size: 12px;
+    font-weight: bold;
+    color: #133b5a;
+    background-color: white;
+    
+}
+.image{
+    width: 30%;
+    border: 1px solid black;
+}
+.image>img{
+width: 100%;
+height: 100%;
+}

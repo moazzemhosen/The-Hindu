@@ -1,0 +1,23 @@
+.carosolgrid{
+    width: 70%;
+    display: flex;
+  justify-content: space-between;
+    border: 1px solid black;
+    
+    
+}
+.Carosoldiv{
+
+}
+.image{
+    width: 90%;
+    margin: auto;
+    height: 150px;
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+}
+.title>p{
+    font-size: 12px;
+}

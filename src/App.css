@@ -1,5 +1,14 @@
+*{ 
+font-family: "Fira Sans",sans-serif;
+  color: #505050;
+  background-color: rgb(237, 237, 237);
+}
 .App {
   text-align: center;
+  /* border: 1px solid black; */
+  width: 70%;
+  margin: auto;
+   background-color: rgb(237, 237, 237);
 }
 
 .App-logo {
