@@ -23,7 +23,7 @@ export const Carosol = () => {
 
   return (
     <div className={styles.carosolgrid}>
-      <Button colorScheme="red" marginTop="80px" onClick={dec}>
+      <Button  marginTop="80px" onClick={dec}>
         <ArrowLeftIcon />
       </Button>
       {products.map((e) => (
@@ -36,7 +36,7 @@ export const Carosol = () => {
           </div>
         </div>
       ))}
-      <Button colorScheme="red" marginTop="80px" onClick={inc}>
+      <Button  marginTop="80px" onClick={inc}>
         <ArrowRightIcon />
       </Button>
     </div>

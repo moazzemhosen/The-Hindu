@@ -19,15 +19,15 @@ const Home = () => {
   return (
     <>
       <div className={styles.griddiv}>
-        {products.map((p, i) => (
-          <div key={i} className={styles.eachdiv}>
+        {products.map((p) => (
+          <div key={p.id} className={styles.eachdiv}>
             <div className={styles.image}>
               <img src={p.urlToImage} alt="" />
             </div>
             <div className={styles.description}>
               <h5>INTERNATIONAL</h5>
               <p>
-                <Link to={`/${i}`}> {p.title}</Link>
+                <Link to={`/${p.id}`}> {p.title}</Link>
               </p>
             </div>
           </div>

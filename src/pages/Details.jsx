@@ -10,18 +10,21 @@ const Details = () => {
     if (id) {
       async function getData() {
         let res = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=us&apiKey=61b72eea33844e8382ef5e05dace8e87&pageSize=${id}`
+          `http://localhost:8080/home/${id}`
         );
         let data = await res.json();
-        setdata(data.data);
+        setdata(data);
       }
       getData();
     }
   }, [id]);
   return (
     <div>
-     data
-      
+      <img src={data.urlToImage} alt="" />
+      <h3>{data.title}</h3>
+      <h3>{data.author}</h3>
+      <h6>{data.publishedAt}</h6>
+      <p>{data.content}</p>
     </div>
   );
 };
