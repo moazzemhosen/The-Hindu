@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);  
     border-bottom: 1px solid rgb(81, 80, 80);  
+    margin-top: 50px;
 }
 
 .socialarea{   

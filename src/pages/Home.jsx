@@ -9,12 +9,10 @@ const Home = () => {
 
   useEffect(() => {
     async function fetchData() {
-      let res = await fetch(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=61b72eea33844e8382ef5e05dace8e87&pageSize=6"
-      );
+      let res = await fetch("http://localhost:8080/home?_limit=6&_page=1");
       let data = await res.json();
-      // console.log(data.articles);
-       setProducts(data.articles);
+       console.log("a",data);
+       setProducts(data);
     }
     fetchData();
   }, []);
