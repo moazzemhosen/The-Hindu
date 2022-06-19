@@ -34,14 +34,15 @@ const Routing = () => {
         <Route path="/:id" element={<Details />} />
         <Route path="/login" element={<Login />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<Details />} />
         <Route path="/opinion" element={<Opinion />} />
         <Route path="/business" element={<Business />} />
-        <Route path="/sports" element={<Sports />}/>
+        <Route path="/sports" element={<Sports />} />
         <Route path="/entertainment" element={<Entertainment />} />
         <Route path="/crossword" element={<CrossWord />} />
         <Route path="/science" element={<Science />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

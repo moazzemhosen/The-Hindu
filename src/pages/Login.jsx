@@ -1,3 +1,4 @@
+import { Button, Heading, Input } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { useEffect } from "react";
 // import { Input,Button } from "@chakra-ui/react";
@@ -36,7 +37,7 @@ const Login = () => {
   }, [navigate, isAuth,location]);
   return (
     <div>
-      Login
+      <Heading color={"#ecc94b"}>LOGIN</Heading>
       <form
         onSubmit={handleSubmit}
         style={{
@@ -47,24 +48,23 @@ const Login = () => {
           gap: "10px",
         }}
       >
-        <input
+        <Input
           name="email"
           type="email"
           placeholder="Enter Email"
           value={loginCreds.email}
           onChange={hanldeChange}
         />
-        <input
-         
+        <Input
           name="password"
           type="password"
           placeholder="Enter Password..."
           value={loginCreds.password}
           onChange={hanldeChange}
         />
-        <button data-cy="login-submit" type="submit">
+        <Button data-cy="login-submit" type="submit" bg={"#ecc94b"}>
           Login
-        </button>
+        </Button>
       </form>
     </div>
   );

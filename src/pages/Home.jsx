@@ -9,7 +9,9 @@ const Home = () => {
 
   useEffect(() => {
     async function fetchData() {
-      let res = await fetch("http://localhost:8080/home?_limit=6&_page=1");
+      let res = await fetch(
+        "https://the-hindu-server.herokuapp.com/home?_limit=6&_page=1"
+      );
       let data = await res.json();
        console.log("a",data);
        setProducts(data);

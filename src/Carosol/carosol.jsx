@@ -11,7 +11,9 @@ export const Carosol = () => {
 
      useEffect(() => {
        async function fetchData() {
-         let res = await fetch(`http://localhost:8080/articles?_limit=3&_page=${limit}`);
+         let res = await fetch(
+           `https://the-hindu-server.herokuapp.com/articles?_limit=3&_page=${limit}`
+         );
          let data = await res.json();
          console.log("d",data);
          setProducts(data);

@@ -10,7 +10,7 @@ const Details = () => {
     if (id) {
       async function getData() {
         let res = await fetch(
-          `http://localhost:8080/home/${id}`
+          `https://the-hindu-server.herokuapp.com/home/${id}`
         );
         let data = await res.json();
         setdata(data);

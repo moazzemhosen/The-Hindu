@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between; 
     border-bottom: 1px solid rgb(150, 149, 149);
-    height: 30px;
+    height: 35px;
     
 }
 .socialicon{
@@ -26,4 +26,5 @@ flex:1;
 }
 .form{
     float: right;
+    border-bottom: 1px solid black;
 }
